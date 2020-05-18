@@ -1,5 +1,6 @@
 const readline = require("readline-sync"); //For including readline-sync
-
+var stillUsing = true;
+while (stillUsing==true){
 var firstNumber = readline.questionInt("Please enter your first number: ");
 var secondNumber = readline.questionInt("Please enter your second number: ");
 var readlineSync = require('readline-sync'),
@@ -18,6 +19,9 @@ var readlineSync = require('readline-sync'),
     case 3:
         console.log("The result is: " + div(firstNumber, secondNumber));
         break;
+    default:
+        stillUsing=false;
+        break;
 }
 
 function add(num1, num2) {
@@ -34,4 +38,5 @@ function mul(num1, num2) {
 
 function div(num1, num2) {
     return num1 / num2;
+}
 }
