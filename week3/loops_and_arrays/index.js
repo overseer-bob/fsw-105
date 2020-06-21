@@ -84,9 +84,9 @@ for(i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++) {
 //Print even or odd for numbers 0 - 100
 for(i = 0; i <= 100; i++) {
     if(i % 2 == 0) {
-        console.log("even");
+        console.log([i] + " is even");
     } else {
-        console.log("odd");
+        console.log([i]+" is odd");
     }
 }
 
